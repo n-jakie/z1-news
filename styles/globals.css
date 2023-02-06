@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+iframe {
+  width: 100%;
+}
+
+html,
+body {
+  font-family: 'Battambang';
+  line-height: 2;
+  word-wrap: break-word;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Font */
+
+.battambang {
+  font-family: 'Battambang', cursive !important;
+}
+.bokor {
+  font-family: 'Bokor', cursive !important;
+}
+.koulen {
+  font-family: 'Koulen', cursive !important;
+}
+
+/* Topnav */
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* SidebarTitle */
+
+.sidebar-title::after {
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+/* Home Page Category */
+.category-new-title::after {
+  content: '';
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  position: absolute;
+  background: #4267b2;
+  z-index: 10;
+  width: 22px;
+  height: 100%;
+  top: 0;
+  right: -22px;
+}
+
+/* Effect */
+
+.custom_hover_effect img {
+  transition: all 0.3s ease;
+}
+
+.custom_hover_effect img:hover {
+  transform: scale(1.1);
+}
+
+.custom_hover_effect:hover h1 {
+  bottom: 0 !important;
+  transition: all 0.3s ease;
+}
+
+.custom_title_lastnew {
+  background-color: rgba(38, 36, 79, 0.7);
+}
+
+.post-hover-effect img {
+  transition: all 0.3s ease;
+}
+
+.post-hover-effect img:hover {
+  transform: scale(1.1);
+}
+
+/* Loading */
+#loading-spinner {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 50px auto;
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes opacity-animation {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.opacity-animation {
+  animation: opacity-animation 1s normal;
+}
+
+footer {
+  background-image: linear-gradient(
+      rgba(39, 36, 79, 0.9),
+      rgba(39, 36, 79, 0.9)
+    ),
+    url('https://wp4.z1flexiblesolution.com/wp-content/uploads/2023/01/camera-man-image.jpg') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
